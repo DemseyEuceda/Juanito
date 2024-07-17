@@ -1,0 +1,30 @@
+@WebApplication1_HostAddress = http://localhost:5298
+
+GET {{WebApplication1_HostAddress}}/WeatherForecast/
+Accept: application/json
+
+
+###
+
+GET {{WebApplication1_HostAddress}}/api/juanito
+Accept: application/json
+
+###
+
+GET {{WebApplication1_HostAddress}}/api/juanito/3
+Accept: application/json
+
+###
+
+
+
+POST {{WebApplication1_HostAddress}}/api/juanito
+Content-Type: application/json
+Accept: application/json
+{
+  "nombre" : "juanito", 
+  "fechanacimiento" : "2013-10-23",
+  "especie" : "caballo",
+  "edad" : "11"
+}
+
